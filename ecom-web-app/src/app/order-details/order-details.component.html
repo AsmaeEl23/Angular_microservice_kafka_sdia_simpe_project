@@ -7,11 +7,11 @@
         <div class="card-body text-sm-start">
           <ul class="list-group">
             <li class="list-group-item">Order ID :{{orderDetails.id}} </li>
-            <li class="list-group-item">Date:{{orderDetails.date|date:'dd/MM/yyyy'}} </li>
+            <li class="list-group-item">Date:{{orderDetails.createdAt|date:'dd/MM/yyyy'}} </li>
             <li class="list-group-item">Status:{{orderDetails.status}} </li>
             <li class="list-group-item">Customer ID :{{orderDetails.customer.id}} </li>
-            <li class="list-group-item">Customer ID :{{orderDetails.customer.name}} </li>
-            <li class="list-group-item">Customer ID :{{orderDetails.customer.email}} </li>
+            <li class="list-group-item">Customer Name :{{orderDetails.customer.name}} </li>
+            <li class="list-group-item">Customer Email :{{orderDetails.customer.email}} </li>
           </ul>
         </div>
       </div>
