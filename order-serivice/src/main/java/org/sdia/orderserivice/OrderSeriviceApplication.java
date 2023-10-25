@@ -45,7 +45,7 @@ public class OrderSeriviceApplication {
                         .build();
                 Order saveOrder=orderRepository.save(order);
                 for(int j=0;j<products.size();j++){
-                    if (Math.random()>0.70){
+                    if (Math.random()>0.20){
                         ProductItem productItem=ProductItem.builder()
                                 .order(saveOrder)
                                 .productId(products.get(j).getId())

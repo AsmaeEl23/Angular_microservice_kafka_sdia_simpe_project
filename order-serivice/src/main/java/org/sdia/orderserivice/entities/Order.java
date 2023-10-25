@@ -25,4 +25,11 @@ public class Order {
     public String toString() {
         return "order id "+id+"createdAt "+createdAt+" customer "+customer+" customerId "+ customerId+" product item "+productItems+" status "+status+" ";
     }
+    public double getTotal(){
+        double somme=0;
+        for (ProductItem pi:productItems){
+            somme+=pi.getAmount();
+        }
+        return somme;
+    }
 }
